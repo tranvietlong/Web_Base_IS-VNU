@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/Logo.png">
+    <link type="" rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Bruno Pizzeria</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img class="imglogo" src="./images/Logo.png"> </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about_us">About</a></li>
+                <li><a href="./features.html" target="_blank">Features</a></li>
+                <li><a href="./order.html" target="_blank">Order</a></li>
+                <li><a href="./register.html" target="_blank">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slideshow">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="imgslide" src="./images/pizza_slide.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bruno Pizzeria</h5>
+                            <p>Nowaday open 7 days a week.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="imgslide" src="./images/seafood_slide.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Welcome back,</h5>
+                            <p>It's been awhite & we are glad to have you back.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="imgslide" src="./images/mask_slide.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Healthcare heroes fighting front</h5>
+                            <p>Your support will show to their fight!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="product">
+            <b style="font-size: x-large;">ANTIPASTI (Appetizers)</b>
+            <div style=" display: flex; flex-wrap: wrap;">
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/bruscetta tomato-700x700.jpg">
+                        <hr />
+                        <h5>BRUSCHETTA AL POMODORO [ V ]</h5>
+                        <p>$8.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Dory Fish-700x700.jpg" />
+                        <hr />
+                        <h5>LA CAPRESSE [ V ]</h5>
+                        <p>$19.30</p>
+                        <button type=" button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Melazane-700x700.jpg">
+                        <hr />
+                        <h5>MELANZANE AL FORNO [ V ]</h5>
+                        <p>$19.30</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Apple Tarte-700x700.jpg">
+                        <hr />
+                        <h5>MOZZARELLA DI BUFALA [ V ]</h5>
+                        <p>$23.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Pollo Fritto-700x700.jpg">
+                        <hr />
+                        <h5>PESCE FRITTO</h5>
+                        <p>$18.10</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Ceasar Salad-700x700.jpg">
+                        <hr />
+                        <h5>PROSCIUTTO MELONE</h5>
+                        <p>$23.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/FoieGras-700x700.jpg">
+                        <hr />
+                        <h5>FOIE GRAS</h5>
+                        <p>$29.90</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <b style="font-size: x-large;">INSALATE (Salads)</b>
+            <div style=" display: flex; flex-wrap: wrap;">
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/beef carpaccio-700x700.jpg">
+                        <hr />
+                        <h5>CARPACCIO DI FILITTO DI MANZO</h5>
+                        <p>$25.10</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/tuna salad-1-700x700.jpg">
+                        <hr />
+                        <h5>INSALATA CESARE</h5>
+                        <p>$18.10</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/seafood-salad-700x700.jpg">
+                        <hr />
+                        <h5>INSALATA DI FRUTTI DI MARE</h5>
+                        <p>$21.30</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/RucolaPz-700x700.jpg">
+                        <hr />
+                        <h5>INSALATA DI GAMBERI</h5>
+                        <p>$24.50</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/tuna salad-1-700x700.jpg">
+                        <hr />
+                        <h5>INSALATA DI TONNO</h5>
+                        <p>$22.20</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <b style="font-size: x-large;">ZUPPA (Home-made Soups)</b>
+            <div style=" display: flex; flex-wrap: wrap">
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/french onion soup-700x700.jpg">
+                        <hr />
+                        <h5>FRENCH ONION SOUP</h5>
+                        <p>$11.50</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/lasagna-700x700.jpg">
+                        <hr />
+                        <h5>LOBSTER BISQUE</h5>
+                        <p>$15.00</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/SeafoodSoup-700x700.jpg">
+                        <hr />
+                        <h5>ZUPPA AI FRUTTI DI MARE</h5>
+                        <p>$23.0</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/Logo.png">
+                        <hr />
+                        <h5>ZUPPA CREMA DI POMODORO [ V ]</h5>
+                        <p>$11.30</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <b style="font-size: x-large;">PASTA</b>
+            <div style=" display: flex; flex-wrap: wrap;">
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Scallop Risotto-700x700.jpg">
+                        <hr />
+                        <h5>PIGOLI</h5>
+                        <p>$25.0</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Ling Crema-700x700.jpg">
+                        <hr />
+                        <h5>LINGUINE AL GRANCHIO CREAMA</h5>
+                        <p>$25.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/ling-polpa-700x700.jpg">
+                        <hr />
+                        <h5>LINGUINE AL GRANCHIO DI POLPA</h5>
+                        <p>$25.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/spa-pomodoro-700x700.jpg">
+                        <hr />
+                        <h5>LINGUINE CON CAPESANTE</h5>
+                        <p>$28.40</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Squid Ink Pasta-700x700.jpg">
+                        <hr />
+                        <h5>LINGUINE PUTTANESCA</h5>
+                        <p>$24.50</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/americana pizza-700x700.jpg">
+                        <hr />
+                        <h5>AMERACA PIZZA</h5>
+                        <p>$35.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/Chicken Mushroom-700x700.jpg">
+                        <hr />
+                        <h5>CHICKEN MUSHROOM</h5>
+                        <p>$48.60</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+
+                <div class="product-container">
+                    <a href="#">
+                        <img class='imgProduct' src="./images/img Product/PorkChop-700x700.jpg">
+                        <hr />
+                        <h5>PORKCHOP</h5>
+                        <p>$44.00</p>
+                        <button type="button">Add</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <article id="about_us">
+                        <aside>
+                            <h5 class="text-uppercase">About Us</h5>
+                            <p>
+                                Bruno started Bruno’s Restaurant over 10 years ago because he sees a lack of authentic
+                                Italian
+                                food in our Singapore market.
+                                <br />
+                            <p>
+                                That’s why after his journey to many countries as a Chef learning and exchanging
+                                experiences, he
+                                came back to our small little sunny island Singapore to settle down.Having to love
+                                Singapore so
+                                much, he became a citizen 20 over years ago and has already localized.And we are just
+                                happy that
+                                he chose Singapore making us part of his family in this business.
+                            </p>
+                        </aside>
+                    </article>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <article>
+                        <aside>
+                            <h5 class="text-uppercase">Contact Us</h5>
+                            <br />
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg> Phone : 6346 3970
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg> Email: abc@example.com
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pin-map" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                                </svg> Address: 201 TELOK KURAU ROAD, KURAU COURT, #01-06 423910
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-alarm" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                                    <path
+                                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                                </svg> Opening Hours: 12:00PM - 2:30PM || 6:00PM - 10:00PM
+                            </p>
+                        </aside>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" href="http://www.is.vnu.edu.vn/vi/" target="_blank">is.vnu.edu.vn</a>
+        </div>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>

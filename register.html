@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgister Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/resgister.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/Logo.png">
+</head>
+
+<body>
+
+    <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" onsubmit="return validateForm()"
+        method="post">
+
+        <h1>Resgister</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Your basic info</legend>
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="user_name" required>
+            <div id="loiHoten" style="color:red;"></div>
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password" required>
+
+            <label>Age:</label>
+            <input type="radio" id="under_18" value="under_18" name="user_age" required><label for="under_18"
+                class="light">Under
+                18</label><br>
+            <input type="radio" id="over_18" value="over_18" name="user_age" required><label for="over_18"
+                class="light">18 or
+                older</label><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="Male" value="Male" name="user_gender" required><label for="Male"
+                class="light">Male</label><br>
+            <input type="radio" id="Female" value="Female" name="user_gender" required><label for="Female"
+                class="light">Female</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span>Your favorite</legend>
+            <label for="menu">Favorite Pizza:</label>
+            <select id="menu" name="user_menu">
+                <optgroup label="ANTIPASTI">
+                    <option value="BRUSCHETTA_AL_POMODORO">BRUSCHETTA AL POMODORO</option>
+                    <option value="FRUTTI_DI_MARE_FRITTO">FRUTTI DI MARE FRITTO</option>
+                    <option value="GARLIC_BREAD">GARLIC BREAD</option>
+                    <option value="LA_CAPRESSE">LA CAPRESSE</option>
+                </optgroup>
+                <optgroup label="INSALATE (salads)">
+                    <option value="CARPACCIO_DI_FILITTO_DI_MANZO">CARPACCIO DI FILITTO DI MANZO</option>
+                    <option value="INSALATA_CESARE">INSALATA CESARE</option>
+                    <option value="INSALATA_DI_FRUTTI_DI_MARE">INSALATA DI FRUTTI DI MARE</option>
+                </optgroup>
+                <optgroup label="ZUPPA (Home-made Soups)">
+                    <option value="FRENCH_NION_SOUP">FRENCH ONION SOUP</option>
+                    <option value="LOBSTER_BISQUE">LOBSTER BISQUE</option>
+                    <option value="ZUPPA_AI_FRUTTI_DI_MARE">ZUPPA AI FRUTTI DI MARE</option>
+                </optgroup>
+                <optgroup label="PASTA">
+                    <option value="BIGOLI">BIGOLI</option>
+                    <option value="LINGUINE_PUTTANESCA">LINGUINE PUTTANESCA</option>
+                </optgroup>
+            </select>
+
+            <label>Interests:</label>
+            <div data-name="check">
+                <input type="checkbox" id="ANTIPASTI" value="ANTIPASTI" checkedname="user_interest"><label class="light"
+                    for="ANTIPASTI">ANTIPASTI</label><br>
+                <input type="checkbox" id="salads" value="Salads" name="user_interest"><label class="light"
+                    for="salads">Salads</label><br>
+                <input type="checkbox" id="ZUPPA" value="ZUPPA" name="user_interest"><label class="light"
+                    for="ZUPPA">ZUPPA</label><br>
+            </div>
+        </fieldset>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+<script type="text/javascript" src="./js/script.js">
+</script>
+
+</html>
